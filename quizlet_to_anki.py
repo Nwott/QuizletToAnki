@@ -2,11 +2,24 @@ from pypdf import PdfReader
 
 def main():
     reader = setup()
+    
+    if(reader == None):
+        return
+
     get_text(reader)
 
+    print("Quizlet exported to output.txt. Follow instructions on Github page to see how to import to Anki.")
+
 def setup():
+    reader = None
+
     # initialize reader
-    reader = PdfReader("./files/quizlet.pdf")
+    try:
+        reader = PdfReader("./files/quizlet.pdf")
+    except:
+        # if could not find file
+        print("Could not find file named quizlet.pdf in files folder. Please follow instructions on Github.")
+        return reader 
 
     # clear text
     with open("output.txt", "w", encoding="utf8"):
@@ -60,7 +73,6 @@ def get_text(reader):
                     replace_colon = True
 
             text += lines[j] 
-            print(lines[j])
 
     # write to file
     with open("output.txt", "w", encoding="utf8") as f:
