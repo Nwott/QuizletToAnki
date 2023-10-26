@@ -3,12 +3,11 @@ from pypdf import PdfReader
 def main():
     reader = setup()
     
-    if(reader == None):
-        return
+    if(reader != None):
+        get_text(reader)
+        print("Quizlet exported to output.txt. Follow instructions on Github page to see how to import to Anki.")
 
-    get_text(reader)
-
-    print("Quizlet exported to output.txt. Follow instructions on Github page to see how to import to Anki.")
+    keep_open()
 
 def setup():
     reader = None
@@ -78,5 +77,8 @@ def get_text(reader):
     with open("output.txt", "w", encoding="utf8") as f:
         f.write(text)
 
+def keep_open():
+    # keeps window open when using .exe file
+    input("Press enter to proceed...")
 
 main()
