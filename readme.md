@@ -4,9 +4,9 @@ Quizlet is a website that allows users to access other user-submitted flash card
 # Running Quizlet to Anki
 1. Download the latest version of Quizlet to Anki from the releases.
 2. On the page for the flash card deck that you want to export, click the ellipses next to the "Share" button and click "Print".
-![image](https://github.com/Nwott/QuizletToAnki/assets/32441141/1ee865d8-2cd3-4bf6-b84b-d01249fb68af)
+![image](/assets/ss_1.png)
 3. Select Glossary and save it as a PDF. You might need to use a different browser if you're not given the option to save as a PDF.
-![image](https://github.com/Nwott/QuizletToAnki/assets/32441141/843cff36-f917-4bda-917c-450beb30ab96)
+![image](/assets/ss_2.png)
 4. Unzip QuizletToAnki-release.zip
 5. Place the PDF that was downloaded from Quizlet into the files folder in QuizletToAnki-release
 6. Rename the PDF to "quizlet.pdf"
