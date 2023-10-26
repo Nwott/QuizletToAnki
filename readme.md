@@ -10,8 +10,9 @@ Quizlet is a website that allows users to access other user-submitted flash card
 4. Unzip QuizletToAnki-release.zip
 5. Place the PDF that was downloaded from Quizlet into the files folder in QuizletToAnki-release
 6. Rename the PDF to "quizlet.pdf"
-7. In Anki, click File -> Import and select output.txt from the QuizletToAnki-release folder
-8. Make sure the "Field separator" is set to "Semicolon" and click Import
+7. Run quizlet_to_anki.exe
+8. In Anki, click File -> Import and select output.txt from the QuizletToAnki-release folder
+9. Make sure the "Field separator" is set to "Semicolon" and click Import
 
 # Developing Quizlet to Anki
 ## Prerequisites
