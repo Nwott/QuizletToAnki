@@ -10,3 +10,9 @@ Quizlet is a website that allows users to access other user-submitted flash card
 4. Unzip QuizletToAnki-release.zip
 5. Place the PDF that was downloaded from Quizlet into the files folder in QuizletToAnki-release
 6. Rename the PDF to "quizlet.pdf"
+
+# Developing Quizlet to Anki
+## Prerequisites
+Please make sure you have the following prerequisites:
+- ```Python 3.11 or higher``` Older versions might also work, but Python 3.11 was used to code it originally
+- ```pypdf 3.16.2``` 
